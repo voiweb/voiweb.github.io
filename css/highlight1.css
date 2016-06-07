@@ -1,10 +1,10 @@
 .article-content pre,
 .article-content .highlight,
 .article-content .highlight pre {
-  background: #f0f2f0;
+  background: #2d2d2d;
   margin: 0.5em 0;
   padding: 0.5em 2%;
-  color: #4d4d4c;
+  color: #ccc;
   line-height: 1.2;
   font-size: 0.8em;
   -webkit-border-radius: 0.35em;
@@ -20,7 +20,7 @@
 }
 .article-content .highlight .gutter pre,
 .article-content .gist .gist-file .gist-data .line-numbers {
-  color: #999;
+  color: #666;
   font-size: 0.8em;
 }
 @media phone {
@@ -31,9 +31,7 @@
   }
 }
 .article-content pre {
-  background: transparent !important;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  color: #000 !important;
 }
 .article-content .highlight {
   overflow: auto;
@@ -60,7 +58,7 @@
 .article-content .highlight figcaption {
   font-size: 0.85em;
   text-align: left;
-  color: #006a00;
+  color: #999;
   line-height: 1em;
   padding: 0.5em 0;
   margin-bottom: 0.5em;
@@ -77,7 +75,7 @@
 }
 .article-content .gist {
   margin: 0.5em 0;
-  background: #f0f2f0;
+  background: #2d2d2d;
   padding: 1em 2%;
   -webkit-border-radius: 0.35em;
   border-radius: 0.35em;
@@ -103,11 +101,11 @@
   margin: 0;
   padding: 0;
   border: none;
-  background: #f0f2f0;
+  background: #2d2d2d;
 }
 .article-content .gist .gist-file .gist-meta {
-  background: #f0f2f0;
-  color: #006a00;
+  background: #2d2d2d;
+  color: #999;
   font: 0.85em font-serif;
   text-shadow: 0 0;
   padding: 0;
@@ -120,11 +118,9 @@
 .article-content .gist .gist-file .gist-meta a:hover {
   color: color-theme;
 }
-.gutter {
-  box-shadow: 24px 0 0 #d6dbdf inset, -2px -10px 0 -2px #d6dbdf, -2px 10px 0 -2px #d6dbdf, -25px -12px 0 -3px #d6dbdf, -25px 12px 0 -3px #d6dbdf, -28px 0 0 #d6dbdf;
-}
-pre .comment {
-  color: #006a00;
+pre .comment,
+pre .title {
+  color: #999;
 }
 pre .variable,
 pre .attribute,
@@ -138,7 +134,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #f2777a;
 }
 pre .number,
 pre .preprocessor,
@@ -146,27 +142,24 @@ pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: #f5871f;
+  color: #f99157;
 }
 pre .class,
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: #718c00;
+  color: #9c9;
 }
-pre .string {
-  color: #c41a16;
-}
+pre .string,
 pre .value,
 pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #718c00;
+  color: #9c9;
 }
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #6cc;
 }
-pre .title,
 pre .function,
 pre .python .decorator,
 pre .python .title,
@@ -175,12 +168,9 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #69c;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #aa0d91;
-}
-pre .type {
-  color: #aa0d91;
+  color: #c9c;
 }
