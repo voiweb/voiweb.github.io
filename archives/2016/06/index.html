@@ -73,13 +73,13 @@
 
               
                 
-                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">文章</a></li>
               
                 
                 <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
               
                 
-                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+                <li class="navigation__item"><a href="/archive" title="" class="">分类</a></li>
               
 
             </ul>
@@ -135,37 +135,50 @@ classes that you can use:
 
 
 
+
 <nav class="cover-navigation navigation--social">
   <ul class="navigation">
 
     
-      <!-- Github -->
-      <li class="navigation__item">
-        <a href="https://github.com/voiweb" title="Huno on GitHub">
-          <i class='icon icon-social-github'></i>
-          <span class="label">GitHub</span>
-        </a>
-      </li>
     
 
     <!-- China social icon -->
-    <!--
+  
     
       <li class="navigation__item">
-        <a href="" title="">
-          <i class='icon cs-icon-douban'></i>
-          <span class="label">Douban</span>
+        <a href="http://tieba.baidu.com/home/main?id=0bc2b4a8caf5264e&fr=userbar" title="百度贴吧">
+          <i class='icon cs-icon-baidu'></i>
+          <span class="label">Baidu</span>
         </a>
       </li>
 
       <li class="navigation__item">
-        <a href="" title="">
+        <a href="http://weibo.com/u/5726430140/home?wvr=5" title="新浪微博">
           <i class='icon cs-icon-weibo'></i>
           <span class="label">Weibo</span>
         </a>
       </li>
 
-    -->
+      <li class="navigation__item">
+        <a href="tencent://message/?uin=1172673619&Site=www.hitux.com&Menu=yes" title="腾讯QQ">
+          <i class='icon cs-icon-qq'></i>
+          <span class="label">qq</span>
+        </a>
+      </li>
+     
+     <li class="navigation__item">
+        <a href="http://user.qzone.qq.com/1172673619?ptlang=2052" title="QQ空间">
+          <i class='icon cs-icon-qzone'></i>
+          <span class="label">qzone</span>
+        </a>
+      </li>
+
+     <li class="navigation__item">
+        <a href="https://wx.qq.com" title="微信">
+          <i class='icon cs-icon-wechat'></i>
+          <span class="label">Wechat</span>
+        </a>
+      </li>
 
 
 
@@ -196,26 +209,6 @@ classes that you can use:
 <div class="main-post-list">
     <ol class="post-list">
     
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2016/06/03/photoPostName/" title="link to 这么久了,写个感言？">这么久了,写个感言？</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2016-06-03" class="post-list__meta--date date">2016-06-03</time> 
-      </div>
-
-      <div class="excerpt">
-        
-          <p><img src="https://pic2.zhimg.com/3e2d55f15c1b12c8e59413b89edc9ae9_b.jpg" alt=""><br>(点击查看全文)<br>
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
     
     <li>
 
@@ -253,20 +246,32 @@ classes that you can use:
 </div>
             <footer class="footer">
 
+
     <span class="footer__copyright">&copy; 2016-2017 | <a href="https://voiweb.com/">由voiweb.com</a>强力驱动 | <a href="https://github.com/voiweb">@Voi</a></span>
     
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>  
 
     <span id="busuanzi_container_site_uv">
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次 |
 </span>
 
 <span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次 |
 </span>
 
-本站总访问量<span id="busuanzi_value_site_pv"></span>次
+本站总访问量<span id="busuanzi_value_site_pv"></span>次 |
+
+
+<span id="showDays"></span>
+<script>
+var birthDay = new Date("2/6/2016");
+var now = new Date();
+var duration = now.getTime() - birthDay.getTime(); 
+var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+document.getElementById("showDays").innerHTML = "本站已运行 "+total+" 天";
+</script>
+
 
 
 </footer>

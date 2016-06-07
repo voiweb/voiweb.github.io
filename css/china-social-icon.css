@@ -62,7 +62,7 @@
 .cs-icon-douban:before {
   content: "h";
 }
-.cs-icon-renren:before {
+.cs-icon-zhihu:before {
   content: "i";
 }
 .cs-icon-qzone:before {
@@ -107,7 +107,7 @@
 .cs-icon-cqzone:before {
   content: "w";
 }
-.cs-icon-crenren:before {
+.cs-icon-czhihu:before {
   content: "x";
 }
 .cs-icon-rtaobao:before {
@@ -134,7 +134,7 @@
 .cs-icon-rdouban:before {
   content: "F";
 }
-.cs-icon-rrenren:before {
+.cs-icon-rzhihu:before {
   content: "G";
 }
 .cs-icon-rqzone:before {
