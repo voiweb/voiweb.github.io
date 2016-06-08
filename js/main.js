@@ -17,7 +17,7 @@ $(document).ready(function() {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
 
-  if (window.location.pathname != "/") {       // if hexo in subdir of site, should change this line
+  if (window.location.pathname != "/voi/") {       // if hexo in subdir of site, should change this line
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
   if (window.location.pathname.substring(0, 5) == "/tag/") {
