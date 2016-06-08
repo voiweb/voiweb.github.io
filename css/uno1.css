@@ -2,8 +2,8 @@
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
-   License: none (public domain)*/
-
+   License: none (public domain)
+*/
 @import url(../css/animate.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -12,7 +12,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -38,8 +37,8 @@ q:before, q:after {
 
 body {
   width: 100%;
-  *zoom: 1;  
-  background-color: #f0f7e6;}
+  zoom: 1;
+  background-color: #f9f9f5; }
   body:before, body:after {
     content: "";
     display: table; }
@@ -926,12 +925,13 @@ html {
 
 body {
   /*font-family: "Raleway", sans-serif;*/
-  font-family:  "Raleway",Verdana,sans-serif,宋体, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family: PingFang SC, Hiragino Sans GB, Helvetica Neue, Microsoft Yahei, WenQuanYi Micro Hei, sans-serif;
   font-size: 1em;
-  color: #666666; }
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased; }
 
 ::selection {
-  background: #fae3df; }
+  background: #f19da5; }
 
 ::-moz-selection {
   background: #fae3df; }
@@ -954,26 +954,22 @@ h5,
 h5 {
   margin-top: .8em;
   margin-bottom: .4em;
-  /*font-family: "Roboto Slab", serif;*/
-  font-family: "Raleway",Verdana,sans-serif,宋体, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
-  font-weight: lighter;
+  font-family: PingFang SC, Hiragino Sans GB, Helvetica Neue, Microsoft Yahei, WenQuanYi Micro Hei, sans-serif;
+  fonat-weight: normal;
   color: #333333;
   -webkit-font-smoothing: antialiased; }
 
 h1 {
   margin-top: 0;
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.2em;
   letter-spacing: .05em; }
 
 h2 {
-  font-size: 2.2em; }
+  font-size: 2.0em; }
 
 h3 {
-  font-size: 1.8em; }
-
-h4 {
-  font-size: 1.4em; }
+  font-size: 1.6em; }
 
 h4 {
   font-size: 1.2em; }
@@ -984,25 +980,37 @@ h5 {
 p {
   margin-bottom: 1.3em;
   line-height: 1.7em; }
-
+.panel-cover__subtitle {
+  font-family: PingFang SC, Hiragino Sans GB, Helvetica Neue, Microsoft Yahei, WenQuanYi Micro Hei, sans-serif;
+  font-weight: 300;
+}
 strong {
   font-weight: bold; }
 
 em {
   font-style: italic; }
 
-blockquote {
+/*blockquote {
   margin: 1em 0;
-  padding: 1em 0;
+  padding: 2em 1em;
   background: #f8f8f8;
   border: 1px solid #eeeeee;
+  border-left: 4px solid #999999;
   border-radius: 3px;
-  /*font-family: "Roboto Slab", serif;*/
   font-family:  "Raleway",Verdana,sans-serif,宋体, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   font-weight: lighter;
   font-style: italic;
   font-size: 1.0em;
-  /*text-align: center;*/ }
+  }*/
+  blockquote {
+  background: rgba(102,128,153,.06);
+  border-left: 5px solid #d6dbdf;
+  font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, WenQuanYi Micro Hei, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 0 20px;
+  padding: 10px 20px; }
+  
   blockquote p:last-child {
     margin-bottom: 0; }
 
@@ -1021,14 +1029,16 @@ ul {
   list-style-type: disc; }
 
 code {
+  background-color: rgba(102,128,153,.06);
   padding: 2px 4px;
-  background-color: #f8f8f8;
-  color: #d14;
-  border: none;
-  word-wrap: break-word;
   border-radius: 3px;
+  border: 1px solid #c9e1f6;
+  color: #d14;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-size: .85em; }
+  font-size: .9em; }
+  padding: .1em .4em;
+  vertical-align: bottom;
+  word-wrap: break-word;
 
 
 .date,
@@ -1054,7 +1064,7 @@ code {
   color: #999999; }
 
 .intro {
-  font-family: "Roboto Slab", serif;
+  font-family: PingFang SC, Hiragino Sans GB, Helvetica Neue, Microsoft Yahei, WenQuanYi Micro Hei, sans-serif;
   font-size: 1.2em;
   font-weight: lighter;
   color: #999999; }
@@ -1092,7 +1102,7 @@ code {
   width: 68%;
   max-width: 960px;
   margin-left: 32%;
-  background-color: #f0f7e6 }
+  background-color:  #f9f9f5 }
 
 .content-wrapper__inner {
   margin: 0 10%;
@@ -1184,7 +1194,7 @@ hr {
   color: #FFF; }
 
 .panel-subtitle {
-  font-family: "Roboto Slab", serif;
+  font-family: PingFang SC, Hiragino Sans GB, Helvetica Neue, Microsoft Yahei, WenQuanYi Micro Hei, sans-serif;
   font-size: 1.2em;
   font-weight: lighter;
   letter-spacing: 3px;
@@ -1198,7 +1208,7 @@ hr {
   width: 100%;
   max-width: none;
   height: 100%;
-  background: url(http://7xv64r.com1.z0.glb.clouddn.com/abc%E6%B5%B7.jpg) top left no-repeat #666666;
+  background: url(../images/background-cover.jpg) top left no-repeat #666666;
   background-size: cover; }
 
 .panel-cover--collapsed {
@@ -1214,14 +1224,14 @@ hr {
   bottom: 0;
   left: 0;
   background-color: rgba(68, 68, 68, 0.2);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(68, 68, 68, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.9)));
-  background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
-  background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
+   }
 
 .panel-cover__logo {
   margin-bottom: .2em; }
 
 .panel-cover__description {
+  font-family: PingFang SC, Hiragino Sans GB, Helvetica Neue, Microsoft Yahei, WenQuanYi Micro Hei, sans-serif;
+  font-weight: normal;
   margin: 0 30px; }
 
 .panel-cover__divider {
@@ -1341,7 +1351,7 @@ hr {
   left: 0;
   width: 100%;
   height: 42px;
-  background: rgba(13, 71, 77, 0.98);
+  background: rgba(100, 100, 250, 0.98);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center; }
 
@@ -1365,7 +1375,7 @@ nav {
 
 .navigation__item {
   display: inline-block;
-  margin: 3px 3px;
+  margin: 5px 3px;
   line-height: 1em; }
   .navigation__item a {
     display: block;
@@ -1624,27 +1634,34 @@ input[type="tel"] {
     width: 100%;
     padding: 20px 0;
     background: rgba(51, 51, 51, 0.8);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+  }
     .navigation-wrapper.visible {
-      display: block; }
+      display: block; 
+    }
 
   .cover-navigation {
     display: block;
     position: relative;
     float: left;
     clear: left;
-    width: 100%; }
+    width: 100%; 
+  }
     .cover-navigation .navigation {
       display: block;
-      width: 100%; }
+      width: 100%; 
+    }
       .cover-navigation .navigation li {
         width: 80%;
-        margin-bottom: .4em; }
+        margin-bottom: .4em; 
+      }
     .cover-navigation.navigation--social {
-      padding-top: 5px; }
+      padding-top: 5px; 
+    }
       .cover-navigation.navigation--social .navigation li {
         display: inline-block;
-        width: 25.8%; }
+        width: 25.8%; 
+      }
 
   .content-wrapper {
     width: 80%;
@@ -1699,7 +1716,4 @@ th, td {
 
 .highlight table {
   border: none;
-}
-pre {
-  font-family: 
 }
