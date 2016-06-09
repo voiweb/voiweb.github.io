@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>voiweb.com</title>
+  <meta name="description" content="voiweb.com">
+  <meta name="author" content="Voi" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <style type="text/css">
+      .panel-cover__divider {
+     width: 50%;
+     margin: 20px auto;
+           border-top: 3px solid rgba(255, 255, 255, 0.14); }
+</style>
+</head>
+<body link="#ffffff"  style="overflow-y: hidden">
+
+
+<!-- count particles -->
+<div class="count-particles">
+ <span class="js-count-particles"><a href="https://wwww.voiweb.com" target="_self" title="访问该网站"><strong>voiweb.com</strong></a></span>
+</div>
+<div id="particles-js"></div> <a href="http://www.voiweb.com/voi" target="_self" title="访问该网站">
+<!-- <h1 style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); color: white;font-size: 59pt;">The world of Voi<br /><hr class="panel-cover__divider" />&nbsp&nbsp&nbsp&nbsp&nbsp Trace On </h1> </a><div class="count-particles"> <span class="js-count-particles"><a href="http://www.voiweb.com/voi" target="_self" title="访问该网站"><strong>voiweb.com</strong></a></span></div>  -->
+<h1 style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); color: white;font-size: 59pt;">Trace On </h1> <hr class="panel-cover__divider" /><br />&nbsp
+<!-- particles.js container -->
+
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="particles.js"></script>
+
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<!--
+<script src="js/lib/stats.js"></script>
+-->
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+<!-- <h1 class="center">The world of Voi</h1> -->
+</body>
+</html>
