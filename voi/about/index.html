@@ -214,6 +214,8 @@ classes that you can use:
  <input type="hidden" name="q" value="site:voiweb.com/voi">
 </form>
 </div>
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
 </header>
 
     <div class="content-wrapper">
@@ -251,7 +253,13 @@ classes that you can use:
       (function() {
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
+
+        <!--
         ds.src = '//static.duoshuo.com/embed.js';
+        -->
+
+       ds.src = 'http://voiweb.com/voi/js/embed.js';
+
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0] 
         || document.getElementsByTagName('body')[0]).appendChild(ds);
