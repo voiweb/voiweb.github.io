@@ -1,6 +1,6 @@
 /* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   ========================================================================== */
+HTML5 CSS Reset Minified - Eric Meyer
+========================================================================== */
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
@@ -19,15 +19,15 @@ li{list-style:none}
 
 
 /* =============================================================================
-   My CSS
-   ========================================================================== */
+My CSS
+========================================================================== */
 
 /* ---- base ---- */
 
 html,body{ 
-	width:100%;
-	height:100%;
-	background:#111;
+  width:100%;
+  height:100%;
+  background:#111;
 }
 
 html{
@@ -50,9 +50,9 @@ canvas{
   background: #000000; 
   /*000022*/
   position: absolute;
-  top: 48px;
+  top: 70px;
   left: 0;
-  width: 80px;
+  width: 0;
   /*color: #13E8E9;*/
   color: #000000;
   font-size: .8em;
@@ -65,6 +65,24 @@ canvas{
   /*overflow: hidden;*/
 }
 
+.count-particles1{
+  background: #000000; 
+  /*000022*/
+  position: absolute;
+  top: 48px;
+  left: 11px;
+  width: 0px;
+  /*color: #13E8E9;*/
+  color: #fff2f2;
+  font-size: 0.4em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 1px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  /*overflow: hidden;*/
+}
 
 
 
@@ -76,13 +94,19 @@ canvas{
 #stats,
 .count-particles{
   -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 20px;
+  margin-left: 250px;
 
- /*加上一个*/
+  /*加上一个*/
   /*overflow: hidden;*/
+}
+.count-particles1{
+  -webkit-user-select: none;
+  margin-top: 0px;
+  margin-left: 0px;
 
-
+  /*加上一个*/
+  /*overflow: hidden;*/
 }
 
 #stats{
@@ -94,15 +118,19 @@ canvas{
   border-radius: 0 0 3px 3px;
 }
 
-
+.count-particles1{
+  border-radius: 0 0 3px 3px;
+}
 /* ---- particles.js container ---- */
+
+
 
 #particles-js{
   width: 100%;
   height: 100%;
   /*background-color: #b61924;*/
-  background-color: #000000;
-  background-image: url('');
+  background-color: rgb(0, 0, 0);
+  background-image: url('http://voiweb-10044672.cos.myqcloud.com/abc.png');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
