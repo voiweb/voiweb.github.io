@@ -3,7 +3,7 @@
 jQuery(document).ready(function ($) {
     $("#spig").mousedown(function (e) {
         if(e.which==3){
-        showMessage("恭喜你，发现秘密通道:<br /><br /><a target=\"_blank\"  href=\"http://jq.qq.com/?_wv=1027&amp;k=VrhwFk\" title=\"奇迹秀官方1群\">奇迹秀官方群</a>",10000);
+        showMessage("恭喜你，发现秘密通道:<br /><br /><a target=\"_blank\"  href=\"http://shang.qq.com/wpa/qunwpa?idkey=3011fad1c10c5dae20c663c942b29e5d000628491a4544430f646adb50bc67c4\" title=\"QQ群\">我们的秘密群</a>",10000);
 }
 });
 $("#spig").bind("contextmenu", function(e) {
@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
     //$(".mumu").jrumble({rangeX: 2,rangeY: 2,rangeRot: 1});
     $(".mumu").mouseover(function () {
        $(".mumu").fadeTo("300", 0.3);
-       msgs = ["收藏奇迹秀，我就跟你玩~", "本喵可远观不可亵玩！", "我会隐身哦！嘿嘿！", "别动手动脚的，把手拿开！！", "再不把手拿开小心我横竖竖你！！", "老大，他摸我，呜呜呜呜~~~", "你把手拿开我就出来！"];
+       msgs = ["收藏这个网站，我就跟你玩~", "恭喜你，发现秘密通道:<br /><br /><a target=\"_blank\"  href=\"http://shang.qq.com/wpa/qunwpa?idkey=3011fad1c10c5dae20c663c942b29e5d000628491a4544430f646adb50bc67c4\" title=\"QQ群\">我们的秘密群</a>", "我会隐身哦！嘿嘿！", "别动手动脚的，把手拿开！！", "恭喜你，发现秘密通道:<br /><br /><a target=\"_blank\"  href=\"http://shang.qq.com/wpa/qunwpa?idkey=3011fad1c10c5dae20c663c942b29e5d000628491a4544430f646adb50bc67c4\" title=\"QQ群\">我们的秘密群</a>", "老大，他摸我，呜呜呜呜~~~", "你把手拿开我就出来！"];
        var i = Math.floor(Math.random() * msgs.length);
         showMessage(msgs[i]);
     });
@@ -45,27 +45,27 @@ jQuery(document).ready(function ($) {
             showMessage(visitor + ' 中午了，吃饭了么？不要饿着了，饿死了谁来挺我呀！', 20000);
         } else if (now > 14 && now <= 18) {
             showMessage(visitor + ' 下午的时光真难熬！还好有你在！', 20000);
-		} else if (now > 18 && now <= 22) {
+        } else if (now > 18 && now <= 22) {
             showMessage(visitor + ' 夜晚的我，要安静的学习啦！', 20000);
         } else {
             showMessage(visitor + ' 快来逗我玩吧！我好无聊啊~~', 20000);
         }
     }
     else {
-        showMessage('欢迎' + visitor + '来到<span style="color:#0099cc;">我的世界～</span> ' + title + ' ', 10000);
+        showMessage('欢迎' + visitor + '来到<span style="color:#0099cc;">我们网站</span> ' + title + ' ', 10000);
     }
     $(".spig").animate({
         top: $(".spig").offset().top + 300,
         left: document.body.offsetWidth - 160
     },
-	{
-	    queue: false,
-	    duration: 1000
-	});
+    {
+        queue: false,
+        duration: 1000
+    });
 //    window.setTimeout(function () {
 //        showMessage("下面播报明日天气<iframe name=\"xidie\" src=\"http://m.weather.com.cn/m/pn1/weather.htm\"frameborder=\“0\” scrolling=\"no\" height=\"15px\"  width=\"130px\" allowtransparency=\"true\" ></iframe>", 10000);
 //    },
-//	4000);
+//  4000);
 });
 
 
@@ -83,7 +83,7 @@ jQuery(document).ready(function ($) {
 //无聊动动
 jQuery(document).ready(function ($) {
     window.setInterval(function () {
-        msgs = ["只有您常常来看我，秀喵才有动力分享更多哦！", "乾坤大挪移！", "我飘过来了！~", "我飘过去了", "我得意地飘！~飘！~"];
+        msgs = ["只有您常常来看我，我才有动力分享更多哦！", "乾坤大挪移！", "我飘过来了！~", "我飘过去了", "我得意地飘！~飘！~"];
         var i = Math.floor(Math.random() * msgs.length);
         s = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6,0.7,0.75,-0.1, -0.2, -0.3, -0.4, -0.5, -0.6,-0.7,-0.75];
         var i1 = Math.floor(Math.random() * s.length);
@@ -92,10 +92,10 @@ jQuery(document).ready(function ($) {
             left: document.body.offsetWidth/2*(1+s[i1]),
             top:  document.body.offsetheight/2*(1+s[i1])
         },
-			{
-			    duration: 2000,
-			    complete: showMessage(msgs[i])
-			});
+            {
+                duration: 2000,
+                complete: showMessage(msgs[i])
+            });
     }, 45000);
 });
 
@@ -107,10 +107,10 @@ jQuery(document).ready(function ($) {
             top: $("#author").offset().top - 70,
             left: $("#author").offset().left - 170
         },
-		{
-		    queue: false,
-		    duration: 1000
-		});
+        {
+            queue: false,
+            duration: 1000
+        });
     });
     $("#email").click(function () {
         showMessage("留下你的邮箱，不然你的头像是小怪物喽！");
@@ -118,10 +118,10 @@ jQuery(document).ready(function ($) {
             top: $("#email").offset().top - 70,
             left: $("#email").offset().left - 170
         },
-		{
-		    queue: false,
-		    duration: 1000
-		});
+        {
+            queue: false,
+            duration: 1000
+        });
     });
     $("#url").click(function () {
 
@@ -130,10 +130,10 @@ jQuery(document).ready(function ($) {
             top: $("#url").offset().top - 70,
             left: $("#url").offset().left - 170
         },
-		{
-		    queue: false,
-		    duration: 1000
-		});
+        {
+            queue: false,
+            duration: 1000
+        });
     });
     $("#comment").click(function () {
         showMessage("认真填写哦！不然会被认作垃圾评论的！我的乖乖~");
@@ -141,10 +141,10 @@ jQuery(document).ready(function ($) {
             top: $("#comment").offset().top - 70,
             left: $("#comment").offset().left - 170
         },
-		{
-		    queue: false,
-		    duration: 1000
-		});
+        {
+            queue: false,
+            duration: 1000
+        });
     });
 });
 
@@ -156,10 +156,10 @@ jQuery(document).ready(function ($) {
         $(".spig").animate({
             top: $(window).scrollTop() + f +300
         },
-		{
-		    queue: false,
-		    duration: 1000
-		});
+        {
+            queue: false,
+            duration: 1000
+        });
     });
 });
 
@@ -185,10 +185,10 @@ jQuery(document).ready(function ($) {
             left: document.body.offsetWidth/2*(1+s[i1]),
             top:  document.body.offsetheight/2*(1+s[i1])
             },
-			{
-			    duration: 500,
-			    complete: showMessage(msgs[i])
-			});
+            {
+                duration: 500,
+                complete: showMessage(msgs[i])
+            });
         } else {
             ismove = false;
         }
