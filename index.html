@@ -1,118 +1,359 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <title>零度空间|the Evil Space</title>
-  <meta name="description" content="voiweb.com">
-  <meta name="author" content="Voi" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
-<!--  <link rel="stylesheet" href="css/reset.css">-->
-  <link rel="stylesheet" href="css/style2.css">
-  <link rel="stylesheet" href="css/404.css">
-  <link rel="stylesheet" href="css/style3.css">
-<!--
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>主页</title>
+<meta name="Keywords" content="voi">
+<link rel="shortcut icon" href="img/ico.ico" type="images/x-icon" />
+ <link rel="apple-touch-icon" href="img/touch-icon-iphone.png"> 
+ <link rel="apple-touch-icon" sizes="76x76" href="img/touch-icon-ipad.png"> 
+ <link rel="apple-touch-icon" sizes="120x120" href="img/touch-icon-iphone-retina.png"> 
+ <link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon-ipad-retina.png">
+ <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="stylesheet" type="text/css" href="Css/index_v6.css">
+<link rel="stylesheet" type="text/css" href="Css/global_v6.css">
+<link rel="stylesheet" type="text/css" href="Css/index-title.css">
+<link rel="stylesheet" href="Css/layerslider.css" type="text/css">
+<script src="Scripts/jquery.min.js"></script>
+<script src="Scripts/jquery.easing.1.3.js"></script>
+<script src="Scripts/slides.min.jquery.js"></script>
+<script src="Scripts/qshare_min.js"></script>
+<!--<script type="text/javascript">
+function uaredirect(murl){
+    try{
+        if(document.getElementById("bdmark") != null) {
+            return
+        }
+        var urlhash = window.location.hash;
+        if(!urlhash.match("fromapp")){
+            if((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))){
+                location.replace(murl);
+            }
+        }
+    }catch(err){}
+}
+uaredirect("http://www.qijishow.com/indexs.html");
+</script>-->
 
-  <link rel="stylesheet" href="css/demo.css">
-  <link rel="stylesheet" href="css/forkit.css">
--->
-<!--  <link rel="stylesheet" href="css/main.css">-->
-  <style>
-    .main{ width:100%; height:500px;background-color:#06F;}
-    .bjimg{ background:url(111111.png) no-repeat; width:525px; height:300px; margin:0 auto; }
-  </style>
-  <style type="text/css">
-      .panel-cover__divider {
-     width: 50%;
-     margin: 20px auto;
-           border-top: 3px solid rgba(255, 255, 255, 0.14); }
-</style>
-</head>
-  <body link="#ffffff"  style="overflow-x: hidden;overflow-y: hidden" style="overflow-x: hidden">
-  <canvas id='world'></canvas>
-
- 
-  
-  
-  
-
-  
-
-
-
-<!-- count particles -->
-  <div>
-    <span class="count-particles1"><a href="https://www.voiweb.com" target="_self" ><strong> <font color="gray">voiweb.com</font></strong></a></span>
-  </div>
-   
-<div class="count-particles">
-  <div id="fof"   >
-    <div ></div>
-    <canvas></canvas>
-  </div>
-<!-- <span class="js-count-particles"><a href="https://www.voiweb.com" target="_self" title="访问该网站"><strong>voiweb.com</strong></a></span>-->
-</div>
-<!--<div id="particles-js"></div> <a href="http://www.voiweb.com/voi" target="_self" title="访问该网站">-->
-<!-- <h1 style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); color: white;font-size: 59pt;">The world of Voi<br /><hr class="panel-cover__divider" />&nbsp&nbsp&nbsp&nbsp&nbsp Trace On </h1> </a><div class="count-particles"> <span class="js-count-particles"><a href="http://www.voiweb.com/voi" target="_self" title="访问该网站"><strong>voiweb.com</strong></a></span></div>  -->
-    <h1 style="position: absolute; top: 71%; left: 50%; transform: translate(-50%, -50%); color: white;font-size: 45pt;"><a href="http://www.voiweb.com/voi" >&nbsp&nbspEnter&nbspIn Evil&nbspSpace&nbsp</a></h1>
-  
-<!-- particles.js container -->
-
-  <div id="particles-js" >
-   
-  </div>
-    <div class="forkit-curtain">
-      <div class="close-button"></div>
-      <h2>OMGOSH KITTENZ!!!1!</h2>
-      <small>thx <a href="http://placekitten.com/">placekittens.com</a></small>
-      <img src="http://placekitten.com/g/200/200">
-      <img src="http://placekitten.com/g/201/200">
-      <img src="http://placekitten.com/g/202/200">
-      <img src="http://placekitten.com/g/204/200">
-    </div>
-
-<!-- scripts -->
-<script src="particles.js"></script>
-
-<script src="js/app.js"></script>
-
-<!-- stats.js -->
-<!--
-<script src="js/lib/stats.js"></script>
--->
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
+	<!--[if lt IE 9]>
+		<script src="Scripts/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="Css/xiumiao.css">
+<script type="text/javascript" src="Scripts/xiumiao.js"></script>
+<script type="text/javascript" src="Scripts/xiumiaoo.js"></script>
+<script type="text/javascript">
+var isindex=true;var title="";var visitor="唔,"
 </script>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="http://music.163.com/outchain/player?type=2&id=27580971&auto=1&height=66"></iframe>
-<!-- <h1 class="center">The world of Voi</h1> -->
- 
-    <script src="js/index2.js"></script>
-    <script src="js/index.js"></script>
-  <script src="js/404.js"></script>
-    
+<!--<script type="text/javascript">
+var isindex=false;var title="秀喵驾到啦！";var visitor="亲爱的秀密们";
+</script>-->
 
-    <!-- The ribbon -->
-<!--
-    <a class="forkit" data-text="Top Secret" data-text-detached="Drag down >" ><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+<script src="Scripts/jquery.js" type="text/javascript"></script>
+<script src="Scripts/greensock.js" type="text/javascript"></script>
+<script src="Scripts/layerslider.transitions.js" type="text/javascript"></script>
+<script src="Scripts/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/page_context.js"></script>
+<link href="Css/media-queries.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+    <div id="pagewrap">
+	<div id="page">
+	<!--[if !IE]><!-->
+	<div id="preload">
+	<div class="preload" >
+	<div class="preload-logo">
+	<div class="preload-logo1">
+	<svg version="1.1" id="lg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="438px" height="322px" viewBox="0 0 600 750" enable-background="Images/e262173ee10649bd835b4c003ddb0021.gif" xml:space="preserve">
+<path fill="none" stroke="rgb(209,171,115)" d="M331.707,323.689l-149.295,83.215
+	c20.55-1.614,41.142,8.524,51.921,27.668c10.608,18.84,8.833,41.284-2.698,57.942l143.521-80.565
+	c19.508-9.951,37.232-22.896,52.568-38.232c37.552-37.554,60.78-89.429,60.78-146.725c0-57.295-23.228-109.172-60.78-146.725
+	C390.172,42.714,338.296,19.487,281,19.487c-57.295,0-109.172,23.227-146.725,60.78c-37.553,37.553-60.781,89.429-60.781,146.725
+	c0,57.296,23.228,109.171,60.78,146.725c11.885,11.885,25.206,22.333,39.678,31.065l122.192-68.108l0.006-0.031
+	c2.59-1.465,4.614-3.812,5.667-6.633l0.031-0.013l42.433-114.552l-0.002-0.001c2.505-4.552,3.488-10.065,2.436-15.844
+	c-2.505-13.768-15.605-23.833-29.259-22.482c-1.16,0.115-2.285,0.309-3.374,0.575l-0.317,0.031c0.018-0.265,0.039-0.529,0.063-0.792
+	l-0.698,0.855l-36.533,8.183l0.009,0.048l-4.25,0.909l-36.763,36.763l4.657,11.996l56.67-10.858l-40.27,108.416
+	c-20.322-4.636-38.482-14.95-52.718-29.186c-19.72-19.72-31.917-46.967-31.917-77.067s12.198-57.346,31.917-77.066
+	c19.719-19.719,46.967-31.917,77.066-31.917c30.099,0,57.347,12.198,77.066,31.917c19.72,19.72,31.917,46.967,31.917,77.066
+	c0,30.099-12.197,57.347-31.917,77.067c-7.375,7.375-15.804,13.697-25.04,18.722C332.538,323.046,332.104,323.355,331.707,323.689
+	L331.707,323.689z M252.359,191.203l-21.161,21.161l-5.962-15.361L252.359,191.203z"/>
+</svg>
+</div>
+	<div class="preload-logo2">
+<svg version="1.1" id="lg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="438px" height="100px" viewBox="0 0 610 163" enable-background="Images/new 0 0 406.479 122.994"
+	 xml:space="preserve">
+	<path style="fill:#d1ab73;" d="M138.785,77.056v22.345h-1.27V77.056c0.167-8.799-3.218-13.117-10.156-12.95
+		c-7.617,0.679-11.597,6.773-11.934,18.282v17.012h-1.269V77.056c0-8.634-3.388-12.95-10.157-12.95
+		c-7.451,0.849-11.426,7.026-11.934,18.536v16.758h-1.27V63.345h1.27v10.664c2.031-7.109,6.006-10.831,11.934-11.172
+		c6.769,0,10.494,3.726,11.172,11.172c2.369-7.276,6.431-11.001,12.188-11.172C135.142,62.671,138.951,67.408,138.785,77.056z"/>
+	<path style="fill:#d1ab73;" d="M149.703,50.395l1.015-0.762l3.809,5.586l-1.016,0.762L149.703,50.395z M151.48,63.345h1.27v36.056
+		h-1.27V63.345z"/>
+	<path style="fill:#d1ab73;" d="M183.981,66.392l-1.015,1.016c-1.694-2.198-3.896-3.214-6.602-3.047
+		c-6.435,1.694-9.903,8.721-10.41,21.075v14.22h-1.269v-36.31h1.269v12.442c2.369-7.955,5.84-12.188,10.41-12.696
+		C179.577,62.925,182.116,64.023,183.981,66.392z"/>
+	<path style="fill:#d1ab73;" d="M222.068,99.147l-1.015,0.508c-1.865-2.032-2.71-5.499-2.539-10.41
+		c-3.047,6.772-8.804,10.323-17.266,10.664c-7.959-0.171-12.021-3.214-12.188-9.142c0.337-7.447,5.753-11.509,16.251-12.187
+		c7.277-0.338,11.68-1.778,13.204-4.317c0-7.109-4.15-10.493-12.442-10.156c-7.788,0-12.529,2.964-14.219,8.888l-1.269-0.254
+		c2.031-6.432,7.193-9.732,15.489-9.903c9.308-0.166,13.878,3.979,13.711,12.442v14.727
+		C219.783,94.069,220.545,97.115,222.068,99.147z M218.514,82.896v-6.856c-1.865,2.202-6.265,3.472-13.204,3.808
+		c-9.819,0.679-14.814,4.317-14.981,10.918c0,5.078,3.638,7.701,10.918,7.872C211.912,97.96,217.665,92.715,218.514,82.896z"/>
+	<path style="fill:#d1ab73;" d="M261.933,73.248l-1.269,0.507c-2.373-6.093-6.943-9.307-13.711-9.649
+		c-8.974,0.849-13.799,6.689-14.473,17.52c0.337,10.664,5.162,16.333,14.473,17.012c7.955,0.167,12.862-3.384,14.727-10.664
+		l1.016,0.508c-2.031,7.788-7.28,11.593-15.743,11.426c-10.156-0.849-15.406-6.94-15.743-18.282
+		c0.845-11.509,6.094-17.774,15.743-18.79C254.228,63.178,259.223,66.646,261.933,73.248z"/>
+	<path style="fill:#d1ab73;" d="M271.074,50.141h1.27v49.26h-1.27V50.141z"/>
+	<path style="fill:#d1ab73;" d="M315.509,82.135h-31.994c0.845,10.498,6.006,15.997,15.489,16.504
+		c7.955-0.171,12.863-3.301,14.727-9.395l1.27,0.507c-2.202,6.435-7.534,9.732-15.997,9.903
+		c-10.664-0.679-16.251-6.769-16.758-18.282c0.675-11.509,6.177-17.687,16.504-18.536C309.753,63.345,315.338,69.78,315.509,82.135z
+		 M283.516,80.865h30.724c-0.508-11.001-5.673-16.587-15.489-16.758C289.439,64.785,284.36,70.371,283.516,80.865z"/>
+	<path style="fill:#d1ab73;" d="M355.628,66.9c-4.912,0.17-7.618,2.031-8.126,5.586c-0.17,3.218,3.214,5.419,10.156,6.601
+		c9.142,1.524,13.625,5.249,13.458,11.172c-0.171,6.943-5.165,10.494-14.981,10.664c-8.467,0.167-13.712-3.467-15.743-10.918
+		l5.332-1.523c1.353,5.756,4.824,8.55,10.41,8.379c6.094-0.167,9.224-2.285,9.395-6.348c0.167-3.383-2.964-5.669-9.395-6.855
+		c-9.82-1.183-14.561-4.908-14.22-11.172c0.675-6.602,5.162-10.069,13.458-10.41c7.955,0.17,12.695,3.471,14.219,9.903l-5.586,1.523
+		C362.991,69.102,360.198,66.9,355.628,66.9z"/>
+	<path style="fill:#d1ab73;" d="M409.458,76.295v23.614h-5.586V77.056c0-6.939-2.793-10.41-8.38-10.41
+		c-6.602,0.849-10.156,4.404-10.664,10.664v22.853h-5.586V49.38h5.586v19.297c2.876-4.229,6.856-6.431,11.934-6.601
+		C405.395,61.909,409.624,66.646,409.458,76.295z"/>
+	<path style="fill:#d1ab73;" d="M433.325,100.924c-11.006-0.678-16.758-6.855-17.265-18.535c0.337-13.033,6.26-19.718,17.773-20.059
+		c10.664,0.507,16.251,6.942,16.758,19.297C450.422,94.323,444.664,100.754,433.325,100.924z M433.579,66.646
+		c-7.788,0.17-11.767,5.332-11.933,15.489c0.166,9.482,4.145,14.39,11.933,14.727c7.277-0.337,11.002-5.332,11.172-14.981
+		C444.244,72.402,440.519,67.324,433.579,66.646z"/>
+	<path style="fill:#d1ab73;" d="M492.234,99.909h-5.84l-6.856-27.931c0-0.675-0.17-2.032-0.508-4.062
+		c0,0.341-0.087,1.015-0.254,2.031c-0.17,1.016-0.341,1.694-0.508,2.032l-7.109,27.931h-6.094l-11.426-36.818h5.586l8.125,29.454
+		c0.167,0.508,0.338,1.186,0.508,2.032c0.167,0.508,0.254,0.849,0.254,1.015h0.254c0-0.845,0.084-1.607,0.254-2.285
+		c0.167-0.338,0.254-0.592,0.254-0.762l7.364-29.454h5.586l7.109,29.454c0.167,0.341,0.254,0.849,0.254,1.524
+		c0.167,0.678,0.254,1.186,0.254,1.523h0.254c0-0.674,0.167-1.69,0.508-3.047l8.38-29.454h5.84L492.234,99.909z"/>
 
-    <script src="js/forkit.js"></script>
--->
+</svg>
+</div>	
+	<div class="index" style="margin-top: 30px;">
+	   <div class="title"><img src="Picture/index-title.png" style="width: 400px;"></div>
+	  </div>
+	</div>
+</div>
+</div>
+
+<!--<![endif]-->
+
+ <div id="header">
+	<div id="headerall">
+		<div id="header-container">
+			<div id="header-left">
+				<h1 id="logo" style=" width: 270px;"><a href="index.html" title="主页秀"></a></h1>
+				<div id="header-right">
+					<div id="header-icons">
+						<ul>
+							<li>
+							<a class="icon-ips" target="_blank" title="腾讯微博" href="http://t.qq.com/xxxxx77777772012" style="position: static; -webkit-transform: rotate(0deg); left: -1px; top: -2px;">腾讯微博</a>
+							</li>
+							<li>
+							<a class="icon-ipc" target="_blank" title="新浪微博" href="http://weibo.com/u/5726430140/home?wvr=5&sudaref=graph.qq.com" style="position: static; -webkit-transform: rotate(0deg);">腾讯微博</a>
+							</li>
+							<li>
+							<a class="icon-zhaofile" target="_blank" title="QQ空间" href="http://user.qzone.qq.com/1172673619">QQ空间</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--[if !IE]><!-->
+<div class="top">
+	<div id="dd" class="wrapper-dropdown-5" tabindex="1" style="padding: 0px !important;">
+		<img src="Picture/nav_icon.png" width="44" height="44">
+		<ul class="dropdown">
+			<div class="index_nav3" style="padding: 0px !important;">
+				<div class="index_nav_icon" style="padding: 0px !important;">
+					<a href="http://bbs.voiweb.com/">回论坛</a>
+				</div>
+				<div class="index_nav_icon" style="padding: 0px !important;">
+					<a href="http://www.voiweb.com/voi/">关于我</a>
+				</div>
+				<div class="index_nav_icon" style="padding: 0px !important;">
+					<a href="http://bbs.voiweb.com/forum-58-1.html">动漫坊</a>
+				</div>
+				<div class="index_nav_icon" style="padding: 0px !important;">
+					<a href="http://bbs.voiweb.com/forum-2-1.html">会员区</a>
+				</div>
+				<div class="index_nav_icon" style="padding: 0px !important;">
+					<a href="http://bbs.voiweb.com/forum-42-1.html">视频区</a>
+				</div>
+				<div class="index_nav_icon" style="padding: 0px !important;">
+					<a href="http://bbs.voiweb.com/forum-39-1.html">音乐区</a>
+				</div>
+			</div>
+		</ul>
+	</div>
+	<div class="logo" style="padding: 0px !important;">
+		<a href="#"><img src="Picture/logo.png" width="44" height="44"></a>
+	</div>
+</div>
+<!--<![endif]-->
+<!--banner-->
+<div id="slider-wrapper">
+		<div id="layerslider" class="ls-wp-container" style="width:1349px;height:591px;">
+		
+		<div class="ls-slide" data-ls="slidedelay:8000;transition2d:all;transition3d:all;">
+			<a href="Brand/Brand57/index.htm"  class="ls-link" target="_blank"><img src="Picture/2016042501001.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+			
+		<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+			<a href="Brand/Brand55/index.htm"  class="ls-link" target="_blank"><img src="Picture/201604250001.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+			
+		<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+			<a href="Brand/Brand54/index.htm"  class="ls-link" target="_blank"><img src="Picture/20160317.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+			
+		<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+			<a href="http://www.eueui.com/"  class="ls-link" target="_blank"><img src="Picture/20160223.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+		<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+			<a href="Brand/Brand52/index.html"  class="ls-link" target="_blank"><img src="Picture/2016010012.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+		<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+			<a href="Brand/Brand51/index.html"  class="ls-link" target="_blank"><img src="Picture/20160104.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+		<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+			<a href="teaching/ui-index.htm"  class="ls-link" target="_blank"><img src="Picture/2016012000001.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+		<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+			<a href="photo.htm"  class="ls-link" target="_blank"><img src="Picture/201601200002.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+		
+			<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+			<a href="http://www.ccwebsite.com/"  class="ls-link" target="_blank"><img src="Picture/20160120004.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+			
+			<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+				<a href="Brand/areyouok/index.htm"  class="ls-link" target="_blank"><img src="Picture/20160120006.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+			
+			
+			<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+				<a href="Brand/Brand48/index.htm"  class="ls-link" target="_blank"><img src="Picture/20160120007.jpg" class="ls-bg" alt="Slide background"/></a>
+			</div>
+			
+			
+			<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+				<a href="Brand/Brand44/index.htm"  class="ls-link" target="_blank"><img src="Picture/20160120008.jpg" class="ls-bg" alt="Slide background"/></a>
+		</div>
+		
+			<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+				<a href="Brand/Brand5/index.htm"  class="ls-link" target="_blank"><img src="Picture/20160120009.jpg" class="ls-bg" alt="Slide background"/></a>
+		</div>
+		
+	<!--		<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+				<a href="Brand/Brand9/index.htm"  class="ls-link" target="_blank"><img src="Picture/201601200011.jpg" class="ls-bg" alt="Slide background"/></a>
+		</div>
+		
+			<div class="ls-slide" data-ls="slidedelay:4000;transition2d:all;transition3d:all;">
+				<a href="time.htm"  class="ls-link" target="_blank"><img src="Picture/201601200013.jpg" class="ls-bg" alt="Slide background"/></a>
+		</div>
+		-->
+	</div>
+
+
+
+	<!-- banner -->
+	<!--功能模块-->
+	<div class="design">
+		<div class="designs">
+			<dd class="vis"><a href="http://bbs.voiweb.com/forum-2-1.html" target="_blank"></a></dd>
+			<dd class="app"><a href="http://bbs.voiweb.com/forum-59-1.html"  target="_blank"></a></dd>
+			<dd class="web"><a href="http://bbs.voiweb.com/forum-58-1.html"  target="_blank"></a></dd>
+			<dd class="yins"><a href="http://bbs.voiweb.com/forum-57-1.html"  target="_blank"></a></dd>
+			<dd class="web3"><a href="http://bbs.voiweb.com/forum-41-1.html"  target="_blank"></a></dd>
+			<dd class="vis3"><a href="http://bbs.voiweb.com/forum-39-1.html" target="_blank"></a></dd>
+			<dd class="app3"><a href="http://bbs.voiweb.com/forum-42-1.html"  target="_blank"></a></dd>
+			<dd class="yins3"><a href="http://voiweb.com/voi/" target="_blank"></a></dd>
+			<!--通用底部信息-->
+			<div id="sidebar">
+				<div class="icon">
+					<a href="http://voiweb.com/voi/" title="关于我" target="_blank"></a>
+				</div>
+				<aside id="sidebara">
+				<a style=" color: #c5c5c5; text-decoration: none;">为了打造一个更好的分享交流平台</a>
+				</aside>
+				<div class="design_top2">
+				</div>
+				<div class="copyright_w">
+					<a href="http://voiweb.com/voi/" target="_blank" title="关于我">关于我</a>　|　<a href="mailto:voiweb.com@gmail.com?subject=你好，我是..." target="_blank" title="联系我">联系</a>　|　<a href="http://bbs.voiweb.com" target="_blank" title="合作">合作</a>　|　<a href="http://voibbs.club" target="_blank" title="友情链接">友情链接</a>　|　<a>QQ群</a><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=3011fad1c10c5dae20c663c942b29e5d000628491a4544430f646adb50bc67c4" style="color: #EA2F2F;"></a>　|　
+				</div>
+				<div class="copyright_certificate" style=" margin-top: 18px;">
+					<a href="http://www.miibeian.gov.cn/" target="_blank" style=" margin-left: 9px;"><!-- 蜀ICP备14021999号 -->　</a>Copyright © <a href="http://www.qijishow.com" target="_blank"> Voiweb.All Rights Reserved.</a>
+				</div>
+				<span id="cd" style="margin-top: -35px;float: right;padding-right: 20px;"><a href="http://www.cnzz.com/stat/website.php?web_id=1253232943" target="_blank" title="站长统计"><img src="Picture/pic.gif" style="margin-top: 10px; margin-left: 0px;"></a></span>
+			</div>
+		</div>
+		<!--[if !IE]><!-->
+			<div class="cb" style="font-size: 12px;float: right; margin-top: -50px;margin-right: 35px;color: #A2A2A2;">
+			<p>Voiweb.版权所有.</p>
+		    </div>
+		<!--<![endif]-->
+		<!--[if !IE]><!-->
+		<div class="copyright">
+			<p style="margin: 0 0 0.2em;width:70%; padding-right: 10px;padding-left: 12px;">
+				<a href="#">版权所有</a>
+			</p>
+			<p style="width: 280px;padding-left: 12px;">
+				Copyright © voiweb.com. All Rights Reserved.
+			</p>
+		</div>
+		<!--<![endif]-->
+	</div>
+	</div>
+	<div id="spig" class="spig">
+    <div id="message">加载中……</div>
+    <div id="mumu" class="mumu"></div>
+</div>
+	<!--<script src="Scripts/baiduseorandom.js"></script>-->
+<script>
+//手机打开浮层
+$("#dd").click(function(){
+	//var s = $(".dropdown").css('overflow');
+	/*if ( s=='hidden' ){
+		$(".dropdown").css('overflow','visible');
+	}else{
+		$(".dropdown").css('overflow','hidden');
+	}*/
+	var s = $(this).hasClass('active');
+	if ( s ){
+		$(this).removeClass('active');
+	}else{
+		$(this).addClass('active');
+	}
+	var b = $(".search_top").css('display');
+
+	if ( b=='block'  ){$(".search_top").css('display','none');
+}
+})
+$(".so_icon").click(function(){
+	var s = $(".search_top").css('display');
+	if ( s=='none' ){
+		$(".search_top").css('display','block');
+	}else{
+		$(".search_top").css('display','none');
+	}
+	var b = $("#dd").hasClass('active');
+	if ( b  ){$("#dd").removeClass('active');
+	}
+})
+</script>
+	<!-- Initializing the slider -->
+	<script>
+		jQuery("#layerslider").layerSlider({
+			pauseOnHover: false,
+			skin: 'borderlessdark3d',
+			hoverBottomNav: true,
+			skinsPath: './layerslider/skins/'
+		});
+	</script>
+
 </body>
 </html>
+
