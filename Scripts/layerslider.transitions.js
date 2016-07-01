@@ -9,20 +9,20 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 $(function(){
     var rightNav = "";
- //    rightNav += "<ul class='ccRightNav'>";
- //    rightNav += "<li><a href='http://bbs.voiweb.com/' target='_blank'>主论坛</a></li>";
- //    rightNav += "<li><a href='http://www.qijishow.com/time.htm' target='_blank'>记录线</a></li>";
- //    rightNav += "<li><a href='http://www.qijishow.com/share.htm' target='_blank'>分享秀</a></li>";
-	// rightNav += "<li><a href='http://www.qijishow.com/game/index.htm' target='_blank'>应用站</a></li>";
- //    rightNav += "<li><a href='http://www.qijishow.com/down/index.htm' target='_blank'>工具箱</a></li>";
-	// rightNav += "<li><a href='http://www.qijishow.com/book/book.htm' target='_blank'>资讯</a></li>";
- //    rightNav += "<li><a href='http://www.qijishow.com/xz1/xz.htm' target='_blank'>素材</a></li>";
-	// rightNav += "<li><a href='http://www.qijishow.com/video.html' target='_blank'>影视</a></li>";
-	// rightNav += "<li><a href='http://www.qijishow.com/photo.htm' target='_blank'>图片</a></li>";
- //    rightNav += "<hr>";
- //    rightNav += "<li class='qrBtn'><a>微信二维码</a></li>";
- //    rightNav += "<li class='qrBox'><img src='http://www.qijishow.com/img/ewm.jpg' alt='微信二维码'/></li>";
- //    rightNav += "</ul>";
+	 rightNav += "<ul class='ccRightNav'>";
+     rightNav += "<li><a href='http://bbs.voiweb.com/' target='_blank'>主论坛</a></li>";
+     rightNav += "<li><a href='http://bbs.voiweb.com/forum-2-1.html' target='_blank'>会员区</a></li>";
+     rightNav += "<li><a href='http://bbs.voiweb.com/forum-59-1.html' target='_blank'>书籍区</a></li>";
+	 rightNav += "<li><a href='http://bbs.voiweb.com/forum-58-1.html' target='_blank'>动漫区</a></li>";
+     rightNav += "<li><a href='http://bbs.voiweb.com/forum-57-1.html' target='_blank'>网盘区</a></li>";
+	 rightNav += "<li><a href='http://bbs.voiweb.com/forum-41-1.html' target='_blank'>学习区</a></li>";
+     rightNav += "<li><a href='http://bbs.voiweb.com/forum-39-1.html' target='_blank'>音乐区</a></li>";
+	 rightNav += "<li><a href='http://bbs.voiweb.com/forum-39-1.html' target='_blank'>电影区</a></li>";
+	 rightNav += "<li><a href='http://bbs.voiweb.com/forum-60-1.html' target='_blank'>反馈区</a></li>";
+     rightNav += "<hr>";
+     rightNav += "<li class='qrBtn'><a>二维码</a></li>";
+     rightNav += "<li class='qrBox'><img src='http://7xv64r.com1.z0.glb.clouddn.com/aa.png' alt='二维码'/></li>";
+     rightNav += "</ul>";
     $("body").append(rightNav);
     $(".ccRightNav").css({
         "width":"200px",
