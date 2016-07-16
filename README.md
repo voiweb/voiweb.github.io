@@ -1,1 +1,1 @@
-http://voiweb.com
+http://voibbs.club
