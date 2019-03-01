@@ -1,3 +1,3 @@
-品茗：http://voibbs.club
+博客
 ---
 Home：http://voiweb.com
